@@ -26,7 +26,7 @@ glimpse(i2)
 
 iris %>% head
 
-#filter
+# filter
 filter(gapminder, country == 'Korea, Rep.')
 filter(gapminder, year == 2007)
 filter(gapminder, country == 'Korea, Rep.' & year == 2007)
@@ -35,12 +35,15 @@ gapminder %>% filter(country == 'Korea, Rep.')
 gapminder %>% filter(year == 2007)
 gapminder %>% filter(country == 'Korea, Rep.' & year == 2007)
 
-#arrange
+# arrange
 arrange(gapminder, year, country)
 gapminder %>% arrange(year, country)
 
-#select
+# select
 select(gapminder, pop, gdpPercap)
 gapminder %>% select(pop, gdpPercap)
 
-#mutate
+# git에 push 실패
+# git의 username을 바꿔서 그런걸로 추측
+# git bash에서 수정
+# git remote set-url origin 주소
