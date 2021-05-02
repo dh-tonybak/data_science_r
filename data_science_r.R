@@ -44,6 +44,12 @@ select(gapminder, pop, gdpPercap)
 gapminder %>% select(pop, gdpPercap)
 
 # git에 push 실패
-# git의 username을 바꿔서 그런걸로 추측
+# git의 username 변경이 원인일 것으로 추측
 # git bash에서 수정
 # git remote set-url origin 주소
+
+# mutate
+gapminder %>%
+  mutate(total_gdp = pop * gdpPercap,
+         le_gdp_ratio = lifeExp / gdpPercap,
+         lgrk = le_gdp_ratio * 100)
